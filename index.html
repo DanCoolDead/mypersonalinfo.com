@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT ME</a>
+	<a class="c" href="#">GALLERY</a>
+	<a class="d" href="#">CONTACT ME</a>
+</div>
+
+
+<div class="content">
+
+	<div class="home">
+		<h1>I am Ricdan Antonio L. Peteros
+		</h1>
+		<h3>STI Student MAWD 1-1A</h3>
+    </div>
+
+    <div class="aboutus">
+    	<p><b>Hello Friends,</b><br> 
+    		<b>I am Ricdan Antonio Layague Peteros<br> 16years old, I am from Big Margus Glan Sar. Prov., I'm Graduated Jr. High in Leonard Young Sr. National High School, I am knights of the altar in our church, I like Playing Mobile Legends and other playing offline or online games, And my hobies is Dancing.<br></p>
+    	<p>I am Sr. High School now i 
+    	transfer in STI Gensan i choose the MAWD Strand Because I want to Explore more Programing Because my Dream is I want to be profesional ComSci(ComputerScience) that's why i like Programing and this is my second Website, I use html,css,and java and im happy making Website and I choose STI that's all thank you.<b>
+        </p>
+    </div>
+
+<div class="gallery">
+	<div class="image">
+      <img src="images/1.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/2.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/3.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/4.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/5.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/6.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/7.jpg" />
+	</div>
+	<div class="image">
+      <img src="images/8.jpg" />
+	</div>
+	
+</div>
+
+<div class="contactus">
+	<div class="contactform">
+	    <form action="" method="post">
+	    	<input type="text" name="" class="inputtext" placeholder="First Name:">
+	    	<input type="text" name="" class="inputtext" placeholder="Last Name:">
+	    	<input type="text" name="" class="inputtext" placeholder="Your Email:">
+	    	<textarea cols="4" rows="6" class="inputmessage">Your Message...!!!</textarea>
+	    	<input type="button" name="" class="submitbutton" value="Submit">
+	    </form>
+</div>
+
+</div>
+
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	
+     $(document).ready(function(){
+         $('a').click(function(){
+             //alert("i am click");
+             var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+         });
+        
+       var $a = $('.a'),
+       $b = $('.b'),
+       $c = $('.c'),
+       $d = $('.d'),
+       $home = $('.home'),
+       $aboutus = $('.aboutus'),
+       $gallery = $('.gallery'),
+       $contactus = $('.contactus');
+
+       $a.click(function(){
+           $home.fadeIn();
+           $aboutus.fadeOut();
+           $gallery.fadeOut();
+           $contactus.fadeOut();
+       });
+       $b.click(function(){
+           $aboutus.fadeIn();
+           $home.fadeOut();
+           $gallery.fadeOut();
+           $contactus.fadeOut();
+       
+       });
+       $c.click(function(){
+           $gallery.fadeIn();
+           $home.fadeOut();
+           $aboutus.fadeOut();
+           $contactus.fadeOut();
+       
+       });
+       $d.click(function(){
+           $contactus.fadeOut();
+           $home.fadeOut();
+           $gallery.fadeOut();
+           $contactus.fadeIn();
+    });
+   });
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
